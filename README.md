@@ -1,16 +1,99 @@
-# React + Vite
+Shafreena Ahmed Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React and Vite to showcase my profile, education, skills, internship experience, projects, certifications, and contact information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Clean and professional portfolio layout
+- Hero section with resume download
+- About and professional summary
+- Education timeline
+- Skills section with proficiency bars
+- Internship experience section
+- Project showcase with detailed modal view
+- Certifications and co-curricular activities
+- Contact form with EmailJS integration
+- LinkedIn and GitHub profile links
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
+- EmailJS
+- Lucide React
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+src/
+  components/
+    Navbar.jsx
+    Hero.jsx
+    About.jsx
+    Education.jsx
+    Skills.jsx
+    Experience.jsx
+    Projects.jsx
+    Certifications.jsx
+    Cocurricular.jsx
+    Contact.jsx
+  App.jsx
+  App.css
+  index.css
+```
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run locally
+
+```bash
+npm run dev
+```
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Environment Variables
+
+If you want the contact form to work, create a `.env` file and add:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+## Deployment
+
+This project can be deployed easily on Vercel.
+
+Recommended Vercel settings:
+- Framework Preset: Vite
+- Build Command: `npm run build`
+- Output Directory: `dist`
+
+## Author
+
+Shafreena Ahmed
+
+- LinkedIn: https://www.linkedin.com/in/shafreena-ahmed-0a8518367/
+- GitHub: https://github.com/Shafreena236
+```
